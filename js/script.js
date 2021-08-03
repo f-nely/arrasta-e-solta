@@ -54,6 +54,10 @@ function dragLeaveNeutral(e) {
     e.currentTarget.classList.remove('hover');
 }
 
-
+function dropNeutral(e) {
+    e.currentTarget.classList.remove('hover');
+    let dragItem = document.querySelector('.item.dragging');
+    e.currentTarget.appendChild(dragItem);
+}
 
 
