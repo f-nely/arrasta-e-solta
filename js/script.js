@@ -27,6 +27,10 @@ function dragOver(e) {
     }
 }
 
+function dragLeave(e) {
+    e.currentTarget.classList.remove('hover');
+}
+
 
 
 
