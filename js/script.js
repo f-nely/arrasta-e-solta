@@ -44,6 +44,12 @@ function drop(e) {
     }
 }
 
+// functions neutral area
+function dragOverNeutral(e) {
+    e.preventDefault();
+    e.currentTarget.classList.add('hover');
+}
+
 
 
 
