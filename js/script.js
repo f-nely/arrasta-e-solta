@@ -1,3 +1,10 @@
+// Initial data
+let areas = {
+    a:null,
+    b:null,
+    c:null
+};
+
 // Events
 document.querySelectorAll('.item').forEach(item => {
     item.addEventListener('dragstart', dragStart);
