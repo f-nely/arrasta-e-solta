@@ -9,4 +9,8 @@ function dragStart(e) {
     e.currentTarget.classList.add('dragging');
 }
 
+function dragEnd(e) {
+    e.currentTarget.classList.remove('dragging');
+}
+
 
