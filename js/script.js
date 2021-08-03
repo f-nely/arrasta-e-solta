@@ -4,4 +4,9 @@ document.querySelectorAll('.item').forEach(item => {
     item.addEventListener('dragend', dragEnd);
 });
 
+// Fuctions item
+function dragStart(e) {
+    e.currentTarget.classList.add('dragging');
+}
+
 
