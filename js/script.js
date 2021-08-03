@@ -10,7 +10,7 @@ document.querySelectorAll('.area').forEach(area => {
     area.addEventListener('drop', drop);
 });
 
-// Fuctions item
+// Functions item
 function dragStart(e) {
     e.currentTarget.classList.add('dragging');
 }
@@ -18,5 +18,17 @@ function dragStart(e) {
 function dragEnd(e) {
     e.currentTarget.classList.remove('dragging');
 }
+
+// Functions area
+function dragOver(e) {
+    if (e.currentTarget.querySelector('.item') === null) {
+        e.preventDefault();
+        e.currentTarget.classList.add('hover');
+    }
+}
+
+
+
+
 
 
